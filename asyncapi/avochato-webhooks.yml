@@ -1,0 +1,27 @@
+generated: '2026-09-27'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://help.avochato.com/api--integrations/unZS436K87R8uM2N4FbnKa/api-and-webhooks/wt7pnS4WrMXE1w2BRcpRZu
+sources:
+- https://help.avochato.com/api--integrations/unZS436K87R8uM2N4FbnKa/api-and-webhooks/wt7pnS4WrMXE1w2BRcpRZu
+- https://www.avochato.com/docs/simulate/events/add_event_(contact_id)
+- https://www.avochato.com/docs/simulate/events/add_event_(phone)
+- https://www.avochato.com/docs/simulate/events/add_event_(ticket_id)
+description: 'Avochato offers the following webhooks:'
+events:
+- event: Inbound and Outbound Messages
+  description: Triggers for inbound and outbound SMS messages.
+- event: Widget Form Submission (SMS or Live Chat)
+  description: Triggers when a widget form is submitted via SMS or live chat.
+- event: Contact Opt-Out/Opt-In
+  description: Triggers when a contact opts out or opts in.
+- event: Ticket Status
+  description: Triggers when a ticket status changes.
+- event: Ticket Agent Escalation
+  description: Triggers when a ticket is escalated to an agent.
+- event: Webhook (AvoAI) Insights
+  description: Triggers for AvoAI insights events.
+- event: Webhook (AvoAI) Summarization
+  description: Triggers for AvoAI summarization events.
+delivery: {}
+docs: https://help.avochato.com/api--integrations/unZS436K87R8uM2N4FbnKa/api-and-webhooks/wt7pnS4WrMXE1w2BRcpRZu

@@ -1,0 +1,151 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/avochato/main/json-schema/avochato-get-v1-contacts2-jrbk681-pv2-cenl8-alj7-nw-response-schema.json",
+  "title": "GetV1Contacts2Jrbk681Pv2Cenl8Alj7NwResponse",
+  "x-generated": "2026-09-27",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/avochato-openapi-generated.yml#/components/schemas/GetV1Contacts2Jrbk681Pv2Cenl8Alj7NwResponse",
+  "type": "object",
+  "properties": {
+    "contacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "street": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "city": {
+            "type": "string"
+          },
+          "state": {
+            "type": "string"
+          },
+          "zip": {
+            "type": "string"
+          },
+          "country": {
+            "type": "string"
+          },
+          "address": {
+            "type": "string"
+          },
+          "notes": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "company": {
+            "type": "string"
+          },
+          "other_phone": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "created_at": {
+            "type": "number"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "tag_details": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "color": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "duration": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "routable": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              }
+            }
+          },
+          "opted_out": {
+            "type": "boolean"
+          },
+          "double_opted_in": {
+            "type": "boolean"
+          },
+          "muted": {
+            "type": "boolean"
+          },
+          "blocked": {
+            "type": "boolean"
+          },
+          "salesforce_object_type": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "salesforce_object_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "priority": {
+            "type": "integer"
+          },
+          "user_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "visible": {
+            "type": "boolean"
+          },
+          "current_owner": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "due_for_compliance": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  }
+}

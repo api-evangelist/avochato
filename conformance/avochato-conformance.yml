@@ -1,0 +1,29 @@
+generated: '2026-09-27'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://help.avochato.com/compliance/1AcSdJjN3wGwND8eq6rWLo/is-avochato-hipaa-compliant/8huWxTEk7EEJKtWq26bTXo
+sources:
+- https://help.avochato.com/compliance/1AcSdJjN3wGwND8eq6rWLo/is-avochato-hipaa-compliant/8huWxTEk7EEJKtWq26bTXo
+- https://help.avochato.com/compliance/1AcSdJjN3wGwND8eq6rWLo/register-for-a2p/m6ik7BJPAAw9KjMpeLFCLg
+- https://help.avochato.com/compliance/1AcSdJjN3wGwND8eq6rWLo/a-complete-guide-to-a2p-10dlc/7Ca5gxNFScYdAnXHFyE15m
+- https://help.avochato.com/compliance/1AcSdJjN3wGwND8eq6rWLo/vetting-score-faqs/9MsftwLeyVmP7MAj5G3LJN
+standards:
+- id: hipaa
+  conforms: true
+  evidence: The short answer is, YES! ... Read on to learn about all of the specifics.
+- id: openapi-3.1
+  conforms: true
+  evidence: the document declares 3.1.0
+- id: oauth2
+  conforms: false
+  evidence: no securitySchemes declared
+- id: rfc9457
+  conforms: false
+  evidence: no response declares application/problem+json
+- id: idempotency
+  conforms: false
+  evidence: no idempotency key parameter on mutating operations
+- id: pagination
+  conforms: true
+  evidence: list operations take page
+docs: https://help.avochato.com/compliance/1AcSdJjN3wGwND8eq6rWLo/is-avochato-hipaa-compliant/8huWxTEk7EEJKtWq26bTXo

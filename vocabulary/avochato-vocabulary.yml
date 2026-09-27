@@ -1,0 +1,102 @@
+generated: '2026-09-27'
+method: derived
+generator: derive-vocabulary.py
+source: openapi/_ae-authored/avochato-openapi-generated.yml
+vocabulary:
+  name: Avochato Domain Vocabulary
+  description: 'Terms declared by Avochato''s own API contract: its resource groups, objects and enumerations, with the contract''s definitions.
+    Derived, not authored.'
+  version: '2026-09-27'
+  terms:
+  - term: GetV1BroadcastsIdAudienceCountResponse
+    definition: 'Object declared by the contract with fields: data.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/avochato-openapi-generated.yml#/components/schemas/GetV1BroadcastsIdAudienceCountResponse
+  - term: PostV1BroadcastsBlp9Me9QyxPublishRequest
+    definition: 'Object declared by the contract with fields: auth_id, auth_secret, scheduled_for, asap.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/avochato-openapi-generated.yml#/components/schemas/PostV1BroadcastsBlp9Me9QyxPublishRequest
+  - term: PostV1BroadcastsBlp9Me9QyxPublishResponse
+    definition: 'Object declared by the contract with fields: broadcast.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/avochato-openapi-generated.yml#/components/schemas/PostV1BroadcastsBlp9Me9QyxPublishResponse
+  - term: PostV1BroadcastsXdjjbrjooeRequest
+    definition: 'Object declared by the contract with fields: auth_id, auth_secret, message, media_url, name, via_tags, via_contact_ids, via_phone_numbers,
+      via_field[field], via_field[value].'
+    tags:
+    - Object
+    source: openapi/_ae-authored/avochato-openapi-generated.yml#/components/schemas/PostV1BroadcastsXdjjbrjooeRequest
+  - term: PostV1BroadcastsXdjjbrjooeResponse
+    definition: 'Object declared by the contract with fields: broadcast.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/avochato-openapi-generated.yml#/components/schemas/PostV1BroadcastsXdjjbrjooeResponse
+  - term: PostV1CampaignsOneCancelRequest
+    definition: 'Object declared by the contract with fields: auth_id, auth_secret, phone, recursive.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/avochato-openapi-generated.yml#/components/schemas/PostV1CampaignsOneCancelRequest
+  - term: GetV1Contacts2Jrbk681PvResponse
+    definition: 'Object declared by the contract with fields: status, data.contacts, page.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/avochato-openapi-generated.yml#/components/schemas/GetV1Contacts2Jrbk681PvResponse
+  - term: GetV1Contacts2Jrbk681Pv2Cenl8Alj7NwResponse
+    definition: 'Object declared by the contract with fields: contacts.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/avochato-openapi-generated.yml#/components/schemas/GetV1Contacts2Jrbk681Pv2Cenl8Alj7NwResponse
+  - term: PostV1ContactsRkajvdlb0OEventsRequest
+    definition: 'Object declared by the contract with fields: auth_id, auth_secret, type, context, revenue.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/avochato-openapi-generated.yml#/components/schemas/PostV1ContactsRkajvdlb0OEventsRequest
+  - term: DeleteV1ContactsRemoveAllRequest
+    definition: 'Object declared by the contract with fields: auth_id, auth_secret, query.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/avochato-openapi-generated.yml#/components/schemas/DeleteV1ContactsRemoveAllRequest
+  - term: GetV1LinksEnl8Alj7Nw2Cpxb9Nv9YoyResponse
+    definition: 'Object declared by the contract with fields: message.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/avochato-openapi-generated.yml#/components/schemas/GetV1LinksEnl8Alj7Nw2Cpxb9Nv9YoyResponse
+  - term: DeleteV1Messages43Y83XbvnmRequest
+    definition: 'Object declared by the contract with fields: auth_id, auth_secret.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/avochato-openapi-generated.yml#/components/schemas/DeleteV1Messages43Y83XbvnmRequest
+  - term: DeleteV1Messages43Y83XbvnmResponse
+    definition: 'Object declared by the contract with fields: message.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/avochato-openapi-generated.yml#/components/schemas/DeleteV1Messages43Y83XbvnmResponse
+  - term: PostV1TicketsQqr91D7BgeEventsRequest
+    definition: 'Object declared by the contract with fields: auth_id, auth_secret, type, context, revenue.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/avochato-openapi-generated.yml#/components/schemas/PostV1TicketsQqr91D7BgeEventsRequest
+  - term: GetV1V1IdResponse
+    definition: 'Object declared by the contract with fields: broadcasts.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/avochato-openapi-generated.yml#/components/schemas/GetV1V1IdResponse
+  - term: PostV1V1IdRequest
+    definition: 'Object declared by the contract with fields: auth_id, auth_secret, message, media_url, status_callback, name, via_tags, via_contact_ids,
+      via_phone_numbers, via_field[field], via_field[value].'
+    tags:
+    - Object
+    source: openapi/_ae-authored/avochato-openapi-generated.yml#/components/schemas/PostV1V1IdRequest
+  - term: PostV1V1IdResponse
+    definition: 'Object declared by the contract with fields: broadcast.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/avochato-openapi-generated.yml#/components/schemas/PostV1V1IdResponse
+  - term: GetV1V1IdIdsResponse
+    definition: 'Object declared by the contract with fields: status, data, page.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/avochato-openapi-generated.yml#/components/schemas/GetV1V1IdIdsResponse

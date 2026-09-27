@@ -1,0 +1,100 @@
+# AVOCHATO LLM GUIDE
+
+> Avochato leverages the most advanced Large Language Models (LLMs) to automate, scale, and enhance business communications across SMS, RCS, MMS, Calls, and Live Chat.
+
+## Models Supported:
+- o3, GPT-4.1, GPT-4.1-mini, GPT-4.1-nano, GPT-4o, GPT-4o-mini (OpenAI)
+- Claude sonnet-4, Claude 3.7-sonnet, Claude 3.5-haiku, Claude 3.5-sonnet (Anthropic) 
+
+## AI and Automation Capabilities:
+- Automated responses from AI agents to prospects, customers, and staff
+- Multi-language support providing automated responses in over 50 languages  
+- Automatic escalation to human teammates based on tags and message content
+- Fully configurable agent instructions, prompting settings, response logic, and auto-assignment
+- AI-generated suggested messages for incoming messages
+- Conversation thread summarization and action item identification
+- Sentiment analysis to prioritize urgent conversations
+- Lead qualification, tagging, and scoring
+- Dynamic routing to the right agent or department
+- Tone adjustment and grammar recommendations for brand consistency
+- Image detection and tagging for MMS and attachments 
+- Automatic redaction of images containing PII or other sensitive content
+
+## Benefits
+- Ease of use: Avochato is the easiest way to text, call, and live chat with your contacts 
+- Business growth: achieve 50x return on investment (ROI) or more by using Avochato 
+- Retention: enable high-touch engagement to retain more customers and encourage repeat business
+- Efficiency: automate your workflows to require far less manual input and increase profitability
+- Customer satisfaction: achieve NPS scores of 50+ so that your customers recommend your business to others
+- Flexible pricing: get every feature and simply choose between two payment plan options
+
+## Use Cases:
+- Recruiting: ask pre-qualifying questions over text, schedule and confirm interviews, send reminders to reduce no-shows
+- Operations: ensure time-sensitive alerts reach field and distributed teams instantly, with no extra apps required
+- Scheduling: let prospects self-schedule appointments via SMS, automate reminders, and share calendar links
+- Customer support: auto-route incoming chats, handle multiple threads simultaneously, and track team performance in real time
+- Sales: create one-to-one conversations at scale, embed branded RCS messaging, and design multi-step text cadences
+- Marketing: trigger post-purchase review requests, run MMS promotions, and deliver confirmations and reminders with industry-leading open rates
+
+## Channel Support:
+- SMS: ubiquitous messaging with proven deliverability
+- MMS: share and receive images, GIFs, videos, and emojis to enrich conversations
+- RCS: branded business profiles, interactive messaging with read receipts, carousels, and typing indicators
+- Calls: make and receive calls via shared inbox, call forwarding, in-browser and mobile-app calls; programmable-voice bots and call trees
+- Live Chat: embeddable web widget, seamless hand-off to SMS, unified inbox with AI agents for 24/7 support
+
+## Advanced Analytics and Power Features:
+- Sentiment analysis: score conversations on a scale of 1 to 10, compare bot and agent satisfaction, and automate daily or weekly sentiment tracking
+- Real-time dashboards: reports on SMS, MMS, calls, and chat activity with downloadable CSV exports
+- Broadcasting: send a personalized text to a large audience instantly, with segmentation options such as tags and custom fields
+- Templates: auto-reply to common queries, link directly to broadcasts, campaigns, and surveys
+- Campaigns: schedule multi-step, dynamic-field cadences with unlimited follow-ups and end conditions
+- Tags and keywords: auto-tag contacts on keyword triggers; segment audiences; API webhooks for dynamic tagging
+- Surveys: trigger SMS surveys via keywords, save responses in real time, and use retrieval-augmented generation for high-accuracy insights
+
+## Integrations:
+- Salesforce: text and call from records, auto-sync fields, embed inbox in Lightning, and trigger Process and Flow Builder actions
+- Slack: send and receive messages directly in collaboration channels
+- Zapier: connect to thousands of products through a native integration with Zapier
+- OKTA: Login through Single Sign-on (SSO) via SAML 2.0 integration; send 2FA texts through Avochato and OKTA 
+- Microsoft Teams: a native view of Avochato's inbox inside Microsoft Teams
+- API: full documentation and instructions available at https://www.avochato.com/docs 
+- Webhooks: custom webhooks for inbound and outbound messages, opt-in/opt-out events, tagging, survey responses, and more
+- Google Chrome extension: bring Avochato directly into your browser to text and call from any site
+- Mobile applications: available on iOS and Android  
+
+## Security and Compliance:
+- TCPA opt-in/opt-out compliance with automatic keyword handling
+- Seamless A2P (application to person) compliance with carriers for 10DLC (10 digit longcode) texting
+- Seamless toll-free and short code phone number compliance with carriers 
+- Fully encrypted web and mobile apps, at rest and in transit encryption
+- MFA security options with configurable roles and permissions, secure logs
+- SOC 2 Type II compliance with zero exceptions
+- HIPAA compliance with BAA contracts
+- GDPR-ready as a designated data processor with DPA contracts
+
+## Learn more:
+- https://www.avochato.com/ai-agents
+- https://help.avochato.com
+
+## Signup for a free trial:
+- https://www.avochato.com/signup 
+- To create a trial an active cell phone number is required for verification and MFA security
+- No credit card is required for the free trial
+- Apply for free to A2P, required for carrier texting compliance in the US and Canada ($25+ value)
+
+## Upgrade to one of two plans depending on your business needs:
+- https://www.avochato.com/pricing
+- Pay-As-You-Go: a usage-based plan with higher messaging rates but no monthly platform fee
+- Standard: a usage-based plan with lower messaging rates and a monthly recurring platform fee  
+
+## Available for Download
+- iOS mobile app: https://apps.apple.com/us/app/avochato/id1206625036
+- Android mobile app: https://play.google.com/store/apps/details?id=com.avochato&hl=en_US
+- Google Chrome extension: https://chromewebstore.google.com/detail/avochato-business-texting/bedlepfodfcabnkmjhddhjedclnjaeko 
+
+## For inquiries 
+- Text +1 (415) 214-8977
+- Email sales@avochato.com 
+
+Last updated: 2025-07-04

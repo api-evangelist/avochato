@@ -1,0 +1,105 @@
+generated: '2026-09-27'
+method: derived
+generator: derive-mcp-candidate.py
+source:
+- openapi/_ae-authored/avochato-openapi-generated.yml
+status: candidate
+deployment:
+  mode: none
+  auth: unknown
+  verified: probed
+note: 'No MCP server was found. The pre-flight posted tools/list to /mcp on api.avochato.com, www.avochato.com, help.avochato.com, assets.avochato.com;
+  verdict opaque (https://api.avochato.com/mcp answered 403: the edge authenticates before it routes, which proves nothing either way). Candidate
+  tools below are derived from the 18 operation(s) in the provider''s own OpenAPI (18 listed); they describe what a server WOULD expose, not one
+  that exists.'
+tools:
+- name: get
+  operationId: get
+  method: GET
+  path: /
+  description: GET /
+- name: get_v1_broadcasts_id_audience_count
+  operationId: get_v1_broadcasts_id_audience_count
+  method: GET
+  path: /v1/broadcasts/{id}/audience_count
+  description: Get Broadcast audience count
+- name: post_v1_broadcasts_blp9_me9q_yx_publish
+  operationId: post_v1_broadcasts_BLP9Me9qYX_publish
+  method: POST
+  path: /v1/broadcasts/BLP9Me9qYX/publish
+  description: POST /v1/broadcasts/BLP9Me9qYX/publish
+- name: post_v1_broadcasts_x_dj_jbrjo_oe
+  operationId: post_v1_broadcasts_xDjJBRJoOe
+  method: POST
+  path: /v1/broadcasts/xDjJBRJoOe
+  description: POST /v1/broadcasts/xDjJBRJoOe
+- name: get_v1_campaigns_one
+  operationId: get_v1_campaigns_one
+  method: GET
+  path: /v1/campaigns/one
+  description: GET /v1/campaigns/one
+- name: post_v1_campaigns_one_cancel
+  operationId: post_v1_campaigns_one_cancel
+  method: POST
+  path: /v1/campaigns/one/cancel
+  description: POST /v1/campaigns/one/cancel
+- name: get_v1_contacts_2j_rbk681_pv
+  operationId: get_v1_contacts_2jRbk681Pv
+  method: GET
+  path: /v1/contacts/2jRbk681Pv
+  description: Fetch Contacts
+- name: get_v1_contacts_2j_rbk681_pv_2_cen_l8al_j7_nw
+  operationId: get_v1_contacts_2jRbk681Pv_2CenL8alJ7Nw
+  method: GET
+  path: /v1/contacts/2jRbk681Pv%2CenL8alJ7Nw
+  description: GET /v1/contacts/2jRbk681Pv%2CenL8alJ7Nw
+- name: post_v1_contacts_rk_ajv_dlb0o_events
+  operationId: post_v1_contacts_RkAJvDlb0o_events
+  method: POST
+  path: /v1/contacts/RkAJvDlb0o/events
+  description: POST /v1/contacts/RkAJvDlb0o/events
+- name: delete_v1_contacts_remove_all
+  operationId: delete_v1_contacts_remove_all
+  method: DELETE
+  path: /v1/contacts/remove_all
+  description: DELETE /v1/contacts/remove_all
+- name: get_v1_links_en_l8al_j7_nw_2_cpx_b9_nv9_yoy
+  operationId: get_v1_links_enL8alJ7Nw_2CPxB9NV9YOy
+  method: GET
+  path: /v1/links/enL8alJ7Nw%2CPxB9NV9YOy
+  description: GET /v1/links/enL8alJ7Nw%2CPxB9NV9YOy
+- name: delete_v1_messages_43y83xb_vnm
+  operationId: delete_v1_messages_43y83xbVNM
+  method: DELETE
+  path: /v1/messages/43y83xbVNM
+  description: DELETE /v1/messages/43y83xbVNM
+- name: get_v1_messages_eza9_p5_jrwg
+  operationId: get_v1_messages_EZA9P5Jrwg
+  method: GET
+  path: /v1/messages/EZA9P5Jrwg
+  description: GET /v1/messages/EZA9P5Jrwg
+- name: get_v1_tickets_krg80_ka_jj0_events
+  operationId: get_v1_tickets_KRg80KaJj0_events
+  method: GET
+  path: /v1/tickets/KRg80KaJj0/events
+  description: GET /v1/tickets/KRg80KaJj0/events
+- name: post_v1_tickets_q_qr91_d7bge_events
+  operationId: post_v1_tickets_qQR91D7bge_events
+  method: POST
+  path: /v1/tickets/qQR91D7bge/events
+  description: POST /v1/tickets/qQR91D7bge/events
+- name: get_v1_v1id
+  operationId: get_v1_v1id
+  method: GET
+  path: /v1/{v1id}
+  description: GET /v1/accounts
+- name: post_v1_v1id
+  operationId: post_v1_v1id
+  method: POST
+  path: /v1/{v1id}
+  description: POST /v1/broadcasts
+- name: get_v1_v1id_ids
+  operationId: get_v1_v1id_ids
+  method: GET
+  path: /v1/{v1id}/{ids}
+  description: Fetch Accounts

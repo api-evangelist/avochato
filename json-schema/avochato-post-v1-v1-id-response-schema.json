@@ -1,0 +1,151 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/avochato/main/json-schema/avochato-post-v1-v1-id-response-schema.json",
+  "title": "PostV1V1IdResponse",
+  "x-generated": "2026-09-27",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/avochato-openapi-generated.yml#/components/schemas/PostV1V1IdResponse",
+  "type": "object",
+  "properties": {
+    "broadcast": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "message": {
+          "type": "string"
+        },
+        "media_url": {
+          "type": "string"
+        },
+        "estimated_segments_sms": {
+          "type": "integer"
+        },
+        "estimated_segments_mms": {
+          "type": "integer"
+        },
+        "status_callback": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "number"
+        },
+        "updated_at": {
+          "type": "number"
+        },
+        "scheduled_for": {
+          "type": "number"
+        },
+        "completed_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "user": {
+          "type": "object",
+          "properties": {
+            "email": {
+              "type": "string"
+            },
+            "id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "image_url": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "signed_in_at": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "avobot_id": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "phone": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "phone_formatted": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "created_at": {
+              "type": "number"
+            },
+            "require_2fa": {
+              "type": "boolean"
+            },
+            "mfa_app_valid": {
+              "type": "boolean"
+            },
+            "phone_valid": {
+              "type": "boolean"
+            }
+          }
+        },
+        "assign_to_user_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "boost_multiplier": {
+          "type": "integer"
+        },
+        "sms_errors": {
+          "type": "object"
+        },
+        "mms_errors": {
+          "type": "object"
+        },
+        "audience": {
+          "type": "integer"
+        },
+        "contacts_count": {
+          "type": "integer"
+        },
+        "attempted": {
+          "type": "integer"
+        },
+        "delivered": {
+          "type": "integer"
+        },
+        "undelivered": {
+          "type": "integer"
+        },
+        "responded": {
+          "type": "integer"
+        },
+        "replied_stop": {
+          "type": "integer"
+        },
+        "pending_contacts_count": {
+          "type": "integer"
+        }
+      }
+    }
+  }
+}

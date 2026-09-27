@@ -1,0 +1,17 @@
+generated: '2026-09-27'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.avochato.com/pricing
+sources:
+- https://www.avochato.com/pricing
+- https://help.avochato.com/administrative/gKg5a8E76p4DLgaVdhAhDM/billing-portal/p6tugpmkYXnTKSZPfDL5Tn
+- https://help.avochato.com/administrative/gKg5a8E76p4DLgaVdhAhDM/adding-more-segments--billing-management/uNhG97q9nb6TvzKCxGDUDh
+name: Avochato pricing
+audience: business-product
+pricing_basis: usage-other
+plans:
+- name: Premium
+  price_text: Contact Us
+  description: Custom Unlock customized solutions for your organization’s complex needs.
+docs: https://www.avochato.com/pricing
+note: 2 extracted row(s) were dropped because their quote was not on the page.

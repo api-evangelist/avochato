@@ -1,0 +1,128 @@
+{
+  "@context": {
+    "@vocab": "https://avochato.com/schema#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "avochato": "https://avochato.com/schema#",
+    "GetV1BroadcastsIdAudienceCountResponse": "avochato:GetV1BroadcastsIdAudienceCountResponse",
+    "data": {
+      "@id": "avochato:data"
+    },
+    "PostV1BroadcastsBlp9Me9QyxPublishRequest": "avochato:PostV1BroadcastsBlp9Me9QyxPublishRequest",
+    "auth_id": {
+      "@id": "avochato:auth_id",
+      "@type": "xsd:string"
+    },
+    "auth_secret": {
+      "@id": "avochato:auth_secret",
+      "@type": "xsd:string"
+    },
+    "scheduled_for": {
+      "@id": "avochato:scheduled_for",
+      "@type": "xsd:decimal"
+    },
+    "asap": {
+      "@id": "avochato:asap",
+      "@type": "xsd:boolean"
+    },
+    "PostV1BroadcastsBlp9Me9QyxPublishResponse": "avochato:PostV1BroadcastsBlp9Me9QyxPublishResponse",
+    "broadcast": {
+      "@id": "avochato:broadcast"
+    },
+    "PostV1BroadcastsXdjjbrjooeRequest": "avochato:PostV1BroadcastsXdjjbrjooeRequest",
+    "message": {
+      "@id": "avochato:message",
+      "@type": "xsd:string"
+    },
+    "media_url": {
+      "@id": "avochato:media_url",
+      "@type": "xsd:string"
+    },
+    "name": {
+      "@id": "avochato:name",
+      "@type": "xsd:string"
+    },
+    "via_tags": {
+      "@id": "avochato:via_tags",
+      "@type": "xsd:string"
+    },
+    "via_contact_ids": {
+      "@id": "avochato:via_contact_ids",
+      "@type": "xsd:string"
+    },
+    "via_phone_numbers": {
+      "@id": "avochato:via_phone_numbers",
+      "@type": "xsd:string"
+    },
+    "PostV1BroadcastsXdjjbrjooeResponse": "avochato:PostV1BroadcastsXdjjbrjooeResponse",
+    "PostV1CampaignsOneCancelRequest": "avochato:PostV1CampaignsOneCancelRequest",
+    "phone": {
+      "@id": "avochato:phone",
+      "@type": "xsd:string"
+    },
+    "recursive": {
+      "@id": "avochato:recursive",
+      "@type": "xsd:string"
+    },
+    "GetV1Contacts2Jrbk681PvResponse": "avochato:GetV1Contacts2Jrbk681PvResponse",
+    "status": {
+      "@id": "avochato:status",
+      "@type": "xsd:integer"
+    },
+    "data.contacts": {
+      "@id": "avochato:data.contacts",
+      "@container": "@list"
+    },
+    "page": {
+      "@id": "avochato:page",
+      "@type": "xsd:integer"
+    },
+    "GetV1Contacts2Jrbk681Pv2Cenl8Alj7NwResponse": "avochato:GetV1Contacts2Jrbk681Pv2Cenl8Alj7NwResponse",
+    "contacts": {
+      "@id": "avochato:contacts",
+      "@container": "@list"
+    },
+    "PostV1ContactsRkajvdlb0OEventsRequest": "avochato:PostV1ContactsRkajvdlb0OEventsRequest",
+    "type": {
+      "@id": "avochato:type",
+      "@type": "xsd:string"
+    },
+    "context": {
+      "@id": "avochato:context",
+      "@type": "xsd:string"
+    },
+    "revenue": {
+      "@id": "avochato:revenue",
+      "@type": "xsd:decimal"
+    },
+    "DeleteV1ContactsRemoveAllRequest": "avochato:DeleteV1ContactsRemoveAllRequest",
+    "query": {
+      "@id": "avochato:query",
+      "@type": "xsd:string"
+    },
+    "GetV1LinksEnl8Alj7Nw2Cpxb9Nv9YoyResponse": "avochato:GetV1LinksEnl8Alj7Nw2Cpxb9Nv9YoyResponse",
+    "DeleteV1Messages43Y83XbvnmRequest": "avochato:DeleteV1Messages43Y83XbvnmRequest",
+    "DeleteV1Messages43Y83XbvnmResponse": "avochato:DeleteV1Messages43Y83XbvnmResponse",
+    "PostV1TicketsQqr91D7BgeEventsRequest": "avochato:PostV1TicketsQqr91D7BgeEventsRequest",
+    "GetV1V1IdResponse": "avochato:GetV1V1IdResponse",
+    "broadcasts": {
+      "@id": "avochato:broadcasts",
+      "@container": "@list"
+    },
+    "PostV1V1IdRequest": "avochato:PostV1V1IdRequest",
+    "status_callback": {
+      "@id": "avochato:status_callback",
+      "@type": "xsd:string"
+    },
+    "PostV1V1IdResponse": "avochato:PostV1V1IdResponse",
+    "GetV1V1IdIdsResponse": "avochato:GetV1V1IdIdsResponse"
+  },
+  "@type": "schema:Dataset",
+  "schema:name": "Avochato API JSON-LD context",
+  "schema:description": "A JSON-LD @context for the objects Avochato's own API contract declares: one class per component schema, one property per declared field, typed from the contract. Derived by script (derive-json-ld.py, 2026-09-27) from openapi/_ae-authored/avochato-openapi-generated.yml.",
+  "dcterms:created": "2026-09-27",
+  "dcterms:source": [
+    "openapi/_ae-authored/avochato-openapi-generated.yml"
+  ]
+}

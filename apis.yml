@@ -1,23 +1,126 @@
 aid: avochato
+
 name: Avochato
-description: 'Avochato is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: Avochato provides the easiest business text messaging software, offering SMS, RCS, voice calls, and live chat solutions. Their platform
+  includes automation features, AI agents, shared inbox, broadcasting, analytics, and integrations, targeting sales, support, marketing, and operations
+  teams.
+
 url: https://raw.githubusercontent.com/api-evangelist/avochato/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
-- Company
-apis: []
+- Messaging
+- SMS
+- RCS
+- Voice
+- Business
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Plans
+  url: plans/avochato-plans-pricing.yml
+- type: Spectral
+  url: rules/avochato-rules.yml
+- type: JSONLD
+  url: json-ld/avochato-context.jsonld
+- type: Vocabulary
+  url: vocabulary/avochato-vocabulary.yml
+- type: Webhooks
+  url: asyncapi/avochato-webhooks.yml
+- type: DataModel
+  url: data-model/avochato-data-model.yml
+- type: Conformance
+  url: conformance/avochato-conformance.yml
+- type: LLMsTxt
+  url: llms/avochato-llms.txt
+- type: SecurityTxt
+  url: well-known/avochato-status-security.txt
+- type: WellKnown
+  url: well-known/avochato-well-known.yml
+- type: Hosts
+  url: hosts/avochato-hosts.yml
+- type: Vendors
+  url: vendors/avochato-vendors.yml
+- type: Webhooks
+  url: https://www.avochato.com/integrations/webhooks
+- type: StatusPage
+  url: https://status.avochato.com/
+- type: Login
+  url: https://www.avochato.com/signin
+- type: GettingStarted
+  url: https://help.avochato.com/using-avochato/1c4ChajMJ1RX2ELRWZWrih/how-to-setup-avoai/uA2BDgaLjHZGdMsPpgbQG1
+- type: DomainSecurity
+  url: security/avochato-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/avochato_stock/
+  url: https://www.avochato.com/
+- type: Documentation
+  url: https://www.avochato.com/docs
+- type: APIReference
+  url: https://www.avochato.com/apis
+- type: Pricing
+  url: https://www.avochato.com/pricing
+- type: Blog
+  url: https://www.avochato.com/blog
+- type: Support
+  url: https://help.avochato.com
+- type: TermsOfService
+  url: https://www.avochato.com/terms
+- type: PrivacyPolicy
+  url: https://www.avochato.com/privacy
+
+apis:
+- aid: avochato:avochato-api
+  name: Avochato API
+  description: 'Avochato API as documented publicly: 18 operations. Contract generated from the documentation by API Evangelist (2026-09-27);
+    not the provider''s own document.'
+  humanURL: https://www.avochato.com/docs
+  baseURL: https://ww
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/avochato-openapi-generated.yml
+    x-provenance: generated
+  - type: JSONSchema
+    url: json-schema/avochato-post-v1-broadcasts-xdjjbrjooe-response-schema.json
+  - type: JSONSchema
+    url: json-schema/avochato-post-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/avochato-post-v1-broadcasts-blp9-me9-qyx-publish-response-schema.json
+  - type: JSONSchema
+    url: json-schema/avochato-get-v1-contacts2-jrbk681-pv2-cenl8-alj7-nw-response-schema.json
+  - type: JSONSchema
+    url: json-schema/avochato-get-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/avochato-delete-v1-messages43-y83-xbvnm-response-schema.json
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: API reference page returns HTML without a machine‑readable spec.
+  evidence:
+  - url: https://www.avochato.com/apis
+    status: 200
+  checked: 2026-09-27
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 23
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

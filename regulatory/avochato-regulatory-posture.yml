@@ -1,0 +1,40 @@
+generated: 2026-09-27
+method: probed
+source: https://www.avochato.com/privacy
+signals:
+  data_subject_request:
+    url: https://www.avochato.com/privacy
+    section: How To Make Choices About Your Customer Account Data
+    note: Provides data subject rights to access, correct, delete personal data via self‑service portal.
+    evidence:
+      - source: https://www.avochato.com/privacy
+        http_status: 200
+        fetched: /tmp/avochato_privacy.html
+        quote: "You can make various choices about your Customer Account Data through the account portal, such as accessing it, correcting it, deleting it, or updating your choices about how it is used, when you log into your Avochato account."
+  data_retention:
+    url: https://www.avochato.com/privacy
+    section: How Long We Store Your Customer Account Data
+    note: Describes data retention period (indefinite until service needed).
+    evidence:
+      - source: https://www.avochato.com/privacy
+        http_status: 200
+        fetched: /tmp/avochato_privacy.html
+        quote: "Avochato will store your Customer Account Data as long as needed to provide you with our services and to operate our business."
+  subprocessors:
+    url: https://www.avochato.com/privacy
+    section: Data protection roles
+    note: Mentions subprocessors and controller/processor roles.
+    evidence:
+      - source: https://www.avochato.com/privacy
+        http_status: 200
+        fetched: /tmp/avochato_privacy.html
+        quote: "When Avochato processes Customer Content, we generally act as a processor. When we process Customer Usage Data, we may act as a controller in others."
+  exit_assistance:
+    url: https://www.avochato.com/privacy
+    section: Data deletion limitations
+    note: Indicates limits on data deletion requests.
+    evidence:
+      - source: https://www.avochato.com/privacy
+        http_status: 200
+        fetched: /tmp/avochato_privacy.html
+        quote: "We will honor this request unless deleting that information prevents us from carrying out necessary business functions, like billing for our services, calculating taxes, or conducting required audits."

@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/avochato/main/json-schema/avochato-delete-v1-messages43-y83-xbvnm-response-schema.json",
+  "title": "DeleteV1Messages43Y83XbvnmResponse",
+  "x-generated": "2026-09-27",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/avochato-openapi-generated.yml#/components/schemas/DeleteV1Messages43Y83XbvnmResponse",
+  "type": "object",
+  "properties": {
+    "message": {
+      "type": "object",
+      "properties": {
+        "account_id": {
+          "type": "string"
+        },
+        "ticket_id": {
+          "type": "string"
+        },
+        "contact_id": {
+          "type": "string"
+        },
+        "sender": {
+          "type": "string"
+        },
+        "message": {
+          "type": "string"
+        },
+        "media_url": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "aborted": {
+          "type": "boolean"
+        },
+        "sent": {
+          "type": "object",
+          "properties": {
+            "element_id": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "element_type": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "scheduled_for": {
+          "type": "number"
+        },
+        "created_at": {
+          "type": "number"
+        },
+        "cancel_on": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "aborter_id": {
+          "type": "integer"
+        },
+        "aborted_by": {
+          "type": "string"
+        },
+        "abort_reason": {
+          "type": "string"
+        },
+        "status_callback": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "event_id": {
+          "type": "string"
+        },
+        "element_id": {
+          "type": "string"
+        },
+        "element_type": {
+          "type": "string"
+        },
+        "sent_at": {
+          "type": "number"
+        }
+      }
+    }
+  }
+}
