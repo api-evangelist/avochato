@@ -1,0 +1,29 @@
+{
+  "provider": "avochato",
+  "sources": [
+    "_ae-authored/avochato-openapi-generated.yml"
+  ],
+  "outputs": [
+    "avochato-avochato-api-api-openapi.yml",
+    "avochato-broadcasts-api-openapi.yml",
+    "avochato-campaigns-api-openapi.yml",
+    "avochato-contacts-api-openapi.yml",
+    "avochato-links-api-openapi.yml",
+    "avochato-messages-api-openapi.yml",
+    "avochato-tickets-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "avochato-openapi-generated.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "avochato-openapi-generated.yml: tagged paths GET / -> Avochato API",
+    "avochato-openapi-generated.yml: tagged paths GET /v1/{v1id} -> Avochato API",
+    "avochato-openapi-generated.yml: tagged paths POST /v1/{v1id} -> Avochato API",
+    "avochato-openapi-generated.yml: tagged paths GET /v1/{v1id}/{ids} -> Avochato API",
+    "avochato-openapi-generated.yml: declared missing tag: Avochato API",
+    "apis.yml register: written (+7 apis, 7 total)"
+  ],
+  "skipped": []
+}

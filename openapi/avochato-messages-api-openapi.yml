@@ -1,0 +1,140 @@
+openapi: 3.2.0
+info:
+  title: Avochato Messages API
+  version: '2026-09-27'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-09-27: 18 operation(s) read from 1 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Avochato has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 28
+    documentation: -10
+    pages-with-code: 1
+    pages-read: 1
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-09-27'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://www.avochato.com/docs
+servers:
+- url: https://ww
+tags:
+- name: Messages
+paths:
+  /v1/messages/43y83xbVNM:
+    delete:
+      operationId: delete_v1_messages_43y83xbVNM
+      tags:
+      - Messages
+      summary: DELETE /v1/messages/43y83xbVNM
+      x-source: https://www.avochato.com/docs
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DeleteV1Messages43Y83XbvnmRequest'
+      responses:
+        '200':
+          description: Success (shape read from the example response on the page)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeleteV1Messages43Y83XbvnmResponse'
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl \"https://www.avochato.com/v1/messages/43y83xbVNM\" -d '{\"auth_id\":\"EDR8z49A2k\",\"auth_secret\":\"YYYYYYYYYYYYYYYYYYYY\"}' -X DELETE  -H \"Version: HTTP/1.0\"  -H \"Content-Type: application/json\"  -H \"Host: www.avochato.com\" \n Response \n Simulated Response \n Status \n 200 \n Headers \n Content-Type: application/json; charset=utf-8\nX-Request-Id: 71f51340-5119-474a-ad31-584d39565a81\nX-Runtime: 0.042862\nCo"
+  /v1/messages/EZA9P5Jrwg:
+    get:
+      operationId: get_v1_messages_EZA9P5Jrwg
+      tags:
+      - Messages
+      summary: GET /v1/messages/EZA9P5Jrwg
+      x-source: https://www.avochato.com/docs
+      parameters:
+      - name: auth_id
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: auth_secret
+        in: query
+        required: false
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl -g \"https://www.avochato.com/v1/messages/EZA9P5Jrwg?auth_id=z1N8x2937L&auth_secret=YYYYYYYYYYYYYYYYYYYY\" -X GET  -H \"Version: HTTP/1.0\"  -H \"Content-Type: application/json\"  -H \"Host: www.avochato.com\" \n Response \n Simulated Response \n Status \n 200 \n Headers \n Content-Type: application/json; charset=utf-8\nX-Request-Id: a7e91c0e-551c-4ffa-9905-7da904b565cd\nX-Runtime: 0.020319\nContent-Length: 7"
+components:
+  schemas:
+    DeleteV1Messages43Y83XbvnmResponse:
+      type: object
+      properties:
+        message:
+          type: object
+          properties:
+            account_id:
+              type: string
+            ticket_id:
+              type: string
+            contact_id:
+              type: string
+            sender:
+              type: string
+            message:
+              type: string
+            media_url:
+              type:
+              - string
+              - 'null'
+            aborted:
+              type: boolean
+            sent:
+              type: object
+              properties:
+                element_id:
+                  type:
+                  - string
+                  - 'null'
+                element_type:
+                  type:
+                  - string
+                  - 'null'
+            scheduled_for:
+              type: number
+            created_at:
+              type: number
+            cancel_on:
+              type:
+              - string
+              - 'null'
+            aborter_id:
+              type: integer
+            aborted_by:
+              type: string
+            abort_reason:
+              type: string
+            status_callback:
+              type:
+              - string
+              - 'null'
+            event_id:
+              type: string
+            element_id:
+              type: string
+            element_type:
+              type: string
+            sent_at:
+              type: number
+    DeleteV1Messages43Y83XbvnmRequest:
+      type: object
+      properties:
+        auth_id:
+          type: string
+        auth_secret:
+          type: string

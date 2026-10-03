@@ -1,0 +1,118 @@
+openapi: 3.2.0
+info:
+  title: Avochato Links API
+  version: '2026-09-27'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-09-27: 18 operation(s) read from 1 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Avochato has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 28
+    documentation: -10
+    pages-with-code: 1
+    pages-read: 1
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-09-27'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://www.avochato.com/docs
+servers:
+- url: https://ww
+tags:
+- name: Links
+paths:
+  /v1/links/enL8alJ7Nw%2CPxB9NV9YOy:
+    get:
+      operationId: get_v1_links_enL8alJ7Nw_2CPxB9NV9YOy
+      tags:
+      - Links
+      summary: GET /v1/links/enL8alJ7Nw%2CPxB9NV9YOy
+      x-source: https://www.avochato.com/docs
+      parameters:
+      - name: auth_id
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: auth_secret
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: page
+        in: query
+        required: false
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (shape read from the example response on the page)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetV1LinksEnl8Alj7Nw2Cpxb9Nv9YoyResponse'
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl -g \"https://www.avochato.com/v1/links/enL8alJ7Nw%2CPxB9NV9YOy?auth_id=zPG9yg8aO0&auth_secret=YYYYYYYYYYYYYYYYYYYY&page=1\" -X GET  -H \"Version: HTTP/1.0\"  -H \"Content-Type: application/json\"  -H \"Host: www.avochato.com\" \n Response \n Simulated Response \n Status \n 200 \n Headers \n Content-Type: application/json; charset=utf-8\nX-Request-Id: db4770ea-6e22-4122-bf08-e27604ca6fa1\nX-Runtime: 0.030952\n"
+components:
+  schemas:
+    GetV1LinksEnl8Alj7Nw2Cpxb9Nv9YoyResponse:
+      type: object
+      properties:
+        message:
+          type: object
+          properties:
+            account_id:
+              type: string
+            ticket_id:
+              type: string
+            contact_id:
+              type: string
+            sender:
+              type: string
+            message:
+              type: string
+            media_url:
+              type:
+              - string
+              - 'null'
+            aborted:
+              type: boolean
+            sent:
+              type: object
+              properties:
+                element_id:
+                  type:
+                  - string
+                  - 'null'
+                element_type:
+                  type:
+                  - string
+                  - 'null'
+            scheduled_for:
+              type: number
+            created_at:
+              type: number
+            cancel_on:
+              type:
+              - string
+              - 'null'
+            aborter_id:
+              type: integer
+            aborted_by:
+              type: string
+            abort_reason:
+              type: string
+            status_callback:
+              type:
+              - string
+              - 'null'
+            event_id:
+              type: string
+            element_id:
+              type: string
+            element_type:
+              type: string
+            sent_at:
+              type: number

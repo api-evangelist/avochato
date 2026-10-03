@@ -1,0 +1,367 @@
+openapi: 3.2.0
+info:
+  title: Avochato API
+  version: '2026-09-27'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-09-27: 18 operation(s) read from 1 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Avochato has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 28
+    documentation: -10
+    pages-with-code: 1
+    pages-read: 1
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-09-27'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://www.avochato.com/docs
+servers:
+- url: https://ww
+tags:
+- name: Avochato API
+paths:
+  /:
+    get:
+      operationId: get
+      tags:
+      - Avochato API
+      summary: GET /
+      x-source: https://www.avochato.com/docs
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: curl -g "https://ww
+  /v1/{v1id}:
+    get:
+      operationId: get_v1_v1id
+      tags:
+      - Avochato API
+      summary: GET /v1/accounts
+      x-source: https://www.avochato.com/docs
+      parameters:
+      - name: v1id
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: auth_id
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: auth_secret
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: page
+        in: query
+        required: false
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (shape read from the example response on the page)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetV1V1IdResponse'
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl -g \"https://www.avochato.com/v1/accounts?auth_id=EZA9P5Jrwg&auth_secret=YYYYYYYYYYYYYYYYYYYY&page=1\" -X GET  -H \"Version: HTTP/1.0\"  -H \"Content-Type: application/json\"  -H \"Host: www.avochato.com\" \n Response \n Simulated Response \n Status \n 200 \n Headers \n Content-Type: application/json; charset=utf-8\nX-Request-Id: fc6f3df3-021c-4b57-aca8-19ef1096fba5\nX-Runtime: 0.024348\nContent-Length: 313 \n"
+        collapsed_from: 8 example path(s) differing only at v1Id
+    post:
+      operationId: post_v1_v1id
+      tags:
+      - Avochato API
+      summary: POST /v1/broadcasts
+      x-source: https://www.avochato.com/docs
+      parameters:
+      - name: v1id
+        in: path
+        required: true
+        schema:
+          type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostV1V1IdRequest'
+      responses:
+        '201':
+          description: Success (shape read from the example response on the page)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostV1V1IdResponse'
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: curl "https://www.avochato.com/v1/broadcasts" -d '{"auth_id":"2jRbkR681P","auth_secret":"YYYYYYYYYYYYYYYYYYYY","message":"new test message","media_url":"https://somesite.com/pretty.jpg","status_callback":"https://somesite.com/some_callback_route","name":"My New Broadcast","via_tags":"tag1,tag2","via_contact_ids":"3OLb4WY84Y","via_phone_numbers":"5105551234,4155551234","via_field[field]":"email","v
+        collapsed_from: 6 example path(s) differing only at v1Id
+  /v1/{v1id}/{ids}:
+    get:
+      operationId: get_v1_v1id_ids
+      tags:
+      - Avochato API
+      summary: Fetch Accounts
+      x-source: https://www.avochato.com/docs
+      parameters:
+      - name: v1id
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: ids
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: auth_id
+        in: query
+        required: true
+        schema:
+          type: string
+        description: Auth Id field
+      - name: auth_secret
+        in: query
+        required: true
+        schema:
+          type: string
+        description: Authentication Secret field
+      - name: page
+        in: query
+        required: false
+        schema:
+          type: string
+        description: Page to request
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetV1V1IdIdsResponse'
+      x-evidence:
+        kind: documentation
+        collapsed_from: 2 example path(s) differing only at v1Id
+components:
+  schemas:
+    GetV1V1IdResponse:
+      type: object
+      properties:
+        broadcasts:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: string
+              name:
+                type:
+                - string
+                - 'null'
+              message:
+                type: string
+              media_url:
+                type:
+                - string
+                - 'null'
+              estimated_segments_sms:
+                type: integer
+              estimated_segments_mms:
+                type: integer
+              status_callback:
+                type:
+                - string
+                - 'null'
+              status:
+                type: string
+              created_at:
+                type: number
+              updated_at:
+                type: number
+              scheduled_for:
+                type: number
+              completed_at:
+                type:
+                - string
+                - 'null'
+              user:
+                type: object
+                properties:
+                  email:
+                    type: string
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  image_url:
+                    type:
+                    - string
+                    - 'null'
+                  signed_in_at:
+                    type:
+                    - string
+                    - 'null'
+                  avobot_id:
+                    type:
+                    - string
+                    - 'null'
+                  phone:
+                    type:
+                    - string
+                    - 'null'
+                  phone_formatted:
+                    type:
+                    - string
+                    - 'null'
+                  created_at:
+                    type: number
+                  require_2fa:
+                    type: boolean
+                  mfa_app_valid:
+                    type: boolean
+                  phone_valid:
+                    type: boolean
+              assign_to_user_id:
+                type:
+                - string
+                - 'null'
+              boost_multiplier:
+                type: integer
+    PostV1V1IdRequest:
+      type: object
+      properties:
+        auth_id:
+          type: string
+        auth_secret:
+          type: string
+        message:
+          type: string
+        media_url:
+          type: string
+        status_callback:
+          type: string
+        name:
+          type: string
+        via_tags:
+          type: string
+        via_contact_ids:
+          type: string
+        via_phone_numbers:
+          type: string
+        via_field[field]:
+          type: string
+        via_field[value]:
+          type: string
+    PostV1V1IdResponse:
+      type: object
+      properties:
+        broadcast:
+          type: object
+          properties:
+            id:
+              type: string
+            name:
+              type: string
+            message:
+              type: string
+            media_url:
+              type: string
+            estimated_segments_sms:
+              type: integer
+            estimated_segments_mms:
+              type: integer
+            status_callback:
+              type: string
+            status:
+              type: string
+            created_at:
+              type: number
+            updated_at:
+              type: number
+            scheduled_for:
+              type: number
+            completed_at:
+              type:
+              - string
+              - 'null'
+            user:
+              type: object
+              properties:
+                email:
+                  type: string
+                id:
+                  type: string
+                name:
+                  type: string
+                image_url:
+                  type:
+                  - string
+                  - 'null'
+                signed_in_at:
+                  type:
+                  - string
+                  - 'null'
+                avobot_id:
+                  type:
+                  - string
+                  - 'null'
+                phone:
+                  type:
+                  - string
+                  - 'null'
+                phone_formatted:
+                  type:
+                  - string
+                  - 'null'
+                created_at:
+                  type: number
+                require_2fa:
+                  type: boolean
+                mfa_app_valid:
+                  type: boolean
+                phone_valid:
+                  type: boolean
+            assign_to_user_id:
+              type:
+              - string
+              - 'null'
+            boost_multiplier:
+              type: integer
+            sms_errors:
+              type: object
+            mms_errors:
+              type: object
+            audience:
+              type: integer
+            contacts_count:
+              type: integer
+            attempted:
+              type: integer
+            delivered:
+              type: integer
+            undelivered:
+              type: integer
+            responded:
+              type: integer
+            replied_stop:
+              type: integer
+            pending_contacts_count:
+              type: integer
+    GetV1V1IdIdsResponse:
+      type: object
+      properties:
+        status:
+          type: integer
+        data:
+          type: object
+        page:
+          type: integer

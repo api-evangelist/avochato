@@ -87,16 +87,16 @@ common:
   url: https://www.avochato.com/privacy
 
 apis:
-- aid: avochato:avochato-api
-  name: Avochato API
-  description: 'Avochato API as documented publicly: 18 operations. Contract generated from the documentation by API Evangelist (2026-09-27);
-    not the provider''s own document.'
+- aid: avochato:avochato-avochato-api-api
+  name: Avochato Avochato API
+  description: The Avochato API API from Avochato — 3 operation(s) for avochato api.
   humanURL: https://www.avochato.com/docs
   baseURL: https://ww
+  tags:
+  - Avochato API
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/avochato-openapi-generated.yml
-    x-provenance: generated
+    url: openapi/avochato-avochato-api-api-openapi.yml
   - type: JSONSchema
     url: json-schema/avochato-post-v1-broadcasts-xdjjbrjooe-response-schema.json
   - type: JSONSchema
@@ -109,7 +109,138 @@ apis:
     url: json-schema/avochato-get-v1-v1-id-response-schema.json
   - type: JSONSchema
     url: json-schema/avochato-delete-v1-messages43-y83-xbvnm-response-schema.json
-
+- aid: avochato:avochato-broadcasts-api
+  name: Avochato Broadcasts API
+  description: The Broadcasts API from Avochato — 3 operation(s) for broadcasts.
+  humanURL: https://www.avochato.com/docs
+  baseURL: https://ww
+  tags:
+  - Broadcasts
+  properties:
+  - type: OpenAPI
+    url: openapi/avochato-broadcasts-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/avochato-post-v1-broadcasts-xdjjbrjooe-response-schema.json
+  - type: JSONSchema
+    url: json-schema/avochato-post-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/avochato-post-v1-broadcasts-blp9-me9-qyx-publish-response-schema.json
+  - type: JSONSchema
+    url: json-schema/avochato-get-v1-contacts2-jrbk681-pv2-cenl8-alj7-nw-response-schema.json
+  - type: JSONSchema
+    url: json-schema/avochato-get-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/avochato-delete-v1-messages43-y83-xbvnm-response-schema.json
+- aid: avochato:avochato-campaigns-api
+  name: Avochato Campaigns API
+  description: The Campaigns API from Avochato — 2 operation(s) for campaigns.
+  humanURL: https://www.avochato.com/docs
+  baseURL: https://ww
+  tags:
+  - Campaigns
+  properties:
+  - type: OpenAPI
+    url: openapi/avochato-campaigns-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/avochato-post-v1-broadcasts-xdjjbrjooe-response-schema.json
+  - type: JSONSchema
+    url: json-schema/avochato-post-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/avochato-post-v1-broadcasts-blp9-me9-qyx-publish-response-schema.json
+  - type: JSONSchema
+    url: json-schema/avochato-get-v1-contacts2-jrbk681-pv2-cenl8-alj7-nw-response-schema.json
+  - type: JSONSchema
+    url: json-schema/avochato-get-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/avochato-delete-v1-messages43-y83-xbvnm-response-schema.json
+- aid: avochato:avochato-contacts-api
+  name: Avochato Contacts API
+  description: The Contacts API from Avochato — 4 operation(s) for contacts.
+  humanURL: https://www.avochato.com/docs
+  baseURL: https://ww
+  tags:
+  - Contacts
+  properties:
+  - type: OpenAPI
+    url: openapi/avochato-contacts-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/avochato-post-v1-broadcasts-xdjjbrjooe-response-schema.json
+  - type: JSONSchema
+    url: json-schema/avochato-post-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/avochato-post-v1-broadcasts-blp9-me9-qyx-publish-response-schema.json
+  - type: JSONSchema
+    url: json-schema/avochato-get-v1-contacts2-jrbk681-pv2-cenl8-alj7-nw-response-schema.json
+  - type: JSONSchema
+    url: json-schema/avochato-get-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/avochato-delete-v1-messages43-y83-xbvnm-response-schema.json
+- aid: avochato:avochato-links-api
+  name: Avochato Links API
+  description: The Links API from Avochato — 1 operation(s) for links.
+  humanURL: https://www.avochato.com/docs
+  baseURL: https://ww
+  tags:
+  - Links
+  properties:
+  - type: OpenAPI
+    url: openapi/avochato-links-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/avochato-post-v1-broadcasts-xdjjbrjooe-response-schema.json
+  - type: JSONSchema
+    url: json-schema/avochato-post-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/avochato-post-v1-broadcasts-blp9-me9-qyx-publish-response-schema.json
+  - type: JSONSchema
+    url: json-schema/avochato-get-v1-contacts2-jrbk681-pv2-cenl8-alj7-nw-response-schema.json
+  - type: JSONSchema
+    url: json-schema/avochato-get-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/avochato-delete-v1-messages43-y83-xbvnm-response-schema.json
+- aid: avochato:avochato-messages-api
+  name: Avochato Messages API
+  description: The Messages API from Avochato — 2 operation(s) for messages.
+  humanURL: https://www.avochato.com/docs
+  baseURL: https://ww
+  tags:
+  - Messages
+  properties:
+  - type: OpenAPI
+    url: openapi/avochato-messages-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/avochato-post-v1-broadcasts-xdjjbrjooe-response-schema.json
+  - type: JSONSchema
+    url: json-schema/avochato-post-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/avochato-post-v1-broadcasts-blp9-me9-qyx-publish-response-schema.json
+  - type: JSONSchema
+    url: json-schema/avochato-get-v1-contacts2-jrbk681-pv2-cenl8-alj7-nw-response-schema.json
+  - type: JSONSchema
+    url: json-schema/avochato-get-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/avochato-delete-v1-messages43-y83-xbvnm-response-schema.json
+- aid: avochato:avochato-tickets-api
+  name: Avochato Tickets API
+  description: The Tickets API from Avochato — 2 operation(s) for tickets.
+  humanURL: https://www.avochato.com/docs
+  baseURL: https://ww
+  tags:
+  - Tickets
+  properties:
+  - type: OpenAPI
+    url: openapi/avochato-tickets-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/avochato-post-v1-broadcasts-xdjjbrjooe-response-schema.json
+  - type: JSONSchema
+    url: json-schema/avochato-post-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/avochato-post-v1-broadcasts-blp9-me9-qyx-publish-response-schema.json
+  - type: JSONSchema
+    url: json-schema/avochato-get-v1-contacts2-jrbk681-pv2-cenl8-alj7-nw-response-schema.json
+  - type: JSONSchema
+    url: json-schema/avochato-get-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/avochato-delete-v1-messages43-y83-xbvnm-response-schema.json
 x-coverage:
   state: unreadable
   reason: js-rendered-docs

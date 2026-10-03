@@ -1,0 +1,88 @@
+openapi: 3.2.0
+info:
+  title: Avochato Tickets API
+  version: '2026-09-27'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-09-27: 18 operation(s) read from 1 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Avochato has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 28
+    documentation: -10
+    pages-with-code: 1
+    pages-read: 1
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-09-27'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://www.avochato.com/docs
+servers:
+- url: https://ww
+tags:
+- name: Tickets
+paths:
+  /v1/tickets/KRg80KaJj0/events:
+    get:
+      operationId: get_v1_tickets_KRg80KaJj0_events
+      tags:
+      - Tickets
+      summary: GET /v1/tickets/KRg80KaJj0/events
+      x-source: https://www.avochato.com/docs
+      parameters:
+      - name: auth_id
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: auth_secret
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: page
+        in: query
+        required: false
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl -g \"https://www.avochato.com/v1/tickets/KRg80KaJj0/events?auth_id=wEG8j28QlW&auth_secret=YYYYYYYYYYYYYYYYYYYY&page=1\" -X GET  -H \"Version: HTTP/1.0\"  -H \"Content-Type: application/json\"  -H \"Host: www.avochato.com\" \n Response \n Simulated Response \n Status \n 200 \n Headers \n Content-Type: application/json; charset=utf-8\nX-Request-Id: ea0b0375-63b3-4432-8b18-2a8ab937a7dd\nX-Runtime: 0.047664\nCont"
+  /v1/tickets/qQR91D7bge/events:
+    post:
+      operationId: post_v1_tickets_qQR91D7bge_events
+      tags:
+      - Tickets
+      summary: POST /v1/tickets/qQR91D7bge/events
+      x-source: https://www.avochato.com/docs
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostV1TicketsQqr91D7BgeEventsRequest'
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl \"https://www.avochato.com/v1/tickets/qQR91D7bge/events\" -d '{\"auth_id\":\"xlYJpq8mwM\",\"auth_secret\":\"YYYYYYYYYYYYYYYYYYYY\",\"type\":\"sale\",\"context\":\"Wanted one hat ($10) and upsold warranty ($5.50)\",\"revenue\":15.5}' -X POST  -H \"Version: HTTP/1.0\"  -H \"Content-Type: application/json\"  -H \"Host: www.avochato.com\" \n Response \n Simulated Response \n Status \n 200 \n Headers \n Content-Type: application"
+components:
+  schemas:
+    PostV1TicketsQqr91D7BgeEventsRequest:
+      type: object
+      properties:
+        auth_id:
+          type: string
+        auth_secret:
+          type: string
+        type:
+          type: string
+        context:
+          type: string
+        revenue:
+          type: number

@@ -1,0 +1,342 @@
+openapi: 3.2.0
+info:
+  title: Avochato Broadcasts API
+  version: '2026-09-27'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-09-27: 18 operation(s) read from 1 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Avochato has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 28
+    documentation: -10
+    pages-with-code: 1
+    pages-read: 1
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-09-27'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://www.avochato.com/docs
+servers:
+- url: https://ww
+tags:
+- name: Broadcasts
+paths:
+  /v1/broadcasts/{id}/audience_count:
+    get:
+      operationId: get_v1_broadcasts_id_audience_count
+      tags:
+      - Broadcasts
+      summary: Get Broadcast audience count
+      x-source: https://www.avochato.com/docs
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: auth_id
+        in: query
+        required: true
+        schema:
+          type: string
+        description: Auth Id field
+      - name: auth_secret
+        in: query
+        required: true
+        schema:
+          type: string
+        description: Authentication Secret field
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetV1BroadcastsIdAudienceCountResponse'
+      x-evidence:
+        kind: documentation
+  /v1/broadcasts/BLP9Me9qYX/publish:
+    post:
+      operationId: post_v1_broadcasts_BLP9Me9qYX_publish
+      tags:
+      - Broadcasts
+      summary: POST /v1/broadcasts/BLP9Me9qYX/publish
+      x-source: https://www.avochato.com/docs
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostV1BroadcastsBlp9Me9QyxPublishRequest'
+      responses:
+        '201':
+          description: Success (shape read from the example response on the page)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostV1BroadcastsBlp9Me9QyxPublishResponse'
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl \"https://www.avochato.com/v1/broadcasts/BLP9Me9qYX/publish\" -d '{\"auth_id\":\"BLP9MzeJqY\",\"auth_secret\":\"YYYYYYYYYYYYYYYYYYYY\",\"scheduled_for\":1781244064.769004,\"asap\":true}' -X POST  -H \"Version: HTTP/1.0\"  -H \"Content-Type: application/json\"  -H \"Host: www.avochato.com\" \n Response \n Simulated Response \n Status \n 200 \n Headers \n Content-Type: application/json; charset=utf-8\nX-Request-Id: f84f6"
+  /v1/broadcasts/xDjJBRJoOe:
+    post:
+      operationId: post_v1_broadcasts_xDjJBRJoOe
+      tags:
+      - Broadcasts
+      summary: POST /v1/broadcasts/xDjJBRJoOe
+      x-source: https://www.avochato.com/docs
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostV1BroadcastsXdjjbrjooeRequest'
+      responses:
+        '201':
+          description: Success (shape read from the example response on the page)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostV1BroadcastsXdjjbrjooeResponse'
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: curl "https://www.avochato.com/v1/broadcasts/xDjJBRJoOe" -d '{"auth_id":"enL8aAl87N","auth_secret":"YYYYYYYYYYYYYYYYYYYY","message":"new test message","media_url":"https://somesite.com/pretty2.jpg","name":"My Other Broadcast","via_tags":"tag2,tag3","via_contact_ids":"EZA9Pl59rw","via_phone_numbers":"+15105551234,+14155551234","via_field[field]":"email","via_field[value]":"bob@mctest.com"}' -X POST
+components:
+  schemas:
+    GetV1BroadcastsIdAudienceCountResponse:
+      type: object
+      properties:
+        data:
+          type: object
+    PostV1BroadcastsBlp9Me9QyxPublishRequest:
+      type: object
+      properties:
+        auth_id:
+          type: string
+        auth_secret:
+          type: string
+        scheduled_for:
+          type: number
+        asap:
+          type: boolean
+    PostV1BroadcastsBlp9Me9QyxPublishResponse:
+      type: object
+      properties:
+        broadcast:
+          type: object
+          properties:
+            id:
+              type: string
+            name:
+              type:
+              - string
+              - 'null'
+            message:
+              type: string
+            media_url:
+              type:
+              - string
+              - 'null'
+            estimated_segments_sms:
+              type: integer
+            estimated_segments_mms:
+              type: integer
+            status_callback:
+              type:
+              - string
+              - 'null'
+            status:
+              type: string
+            created_at:
+              type: number
+            updated_at:
+              type: number
+            scheduled_for:
+              type: number
+            completed_at:
+              type:
+              - string
+              - 'null'
+            user:
+              type: object
+              properties:
+                email:
+                  type: string
+                id:
+                  type: string
+                name:
+                  type: string
+                image_url:
+                  type:
+                  - string
+                  - 'null'
+                signed_in_at:
+                  type:
+                  - string
+                  - 'null'
+                avobot_id:
+                  type:
+                  - string
+                  - 'null'
+                phone:
+                  type:
+                  - string
+                  - 'null'
+                phone_formatted:
+                  type:
+                  - string
+                  - 'null'
+                created_at:
+                  type: number
+                require_2fa:
+                  type: boolean
+                mfa_app_valid:
+                  type: boolean
+                phone_valid:
+                  type: boolean
+            assign_to_user_id:
+              type:
+              - string
+              - 'null'
+            boost_multiplier:
+              type: integer
+            sms_errors:
+              type: object
+            mms_errors:
+              type: object
+            audience:
+              type: integer
+            contacts_count:
+              type: integer
+            attempted:
+              type: integer
+            delivered:
+              type: integer
+            undelivered:
+              type: integer
+            responded:
+              type: integer
+            replied_stop:
+              type: integer
+    PostV1BroadcastsXdjjbrjooeRequest:
+      type: object
+      properties:
+        auth_id:
+          type: string
+        auth_secret:
+          type: string
+        message:
+          type: string
+        media_url:
+          type: string
+        name:
+          type: string
+        via_tags:
+          type: string
+        via_contact_ids:
+          type: string
+        via_phone_numbers:
+          type: string
+        via_field[field]:
+          type: string
+        via_field[value]:
+          type: string
+    PostV1BroadcastsXdjjbrjooeResponse:
+      type: object
+      properties:
+        broadcast:
+          type: object
+          properties:
+            id:
+              type: string
+            name:
+              type: string
+            message:
+              type: string
+            media_url:
+              type: string
+            estimated_segments_sms:
+              type: integer
+            estimated_segments_mms:
+              type: integer
+            status_callback:
+              type:
+              - string
+              - 'null'
+            status:
+              type: string
+            created_at:
+              type: number
+            updated_at:
+              type: number
+            scheduled_for:
+              type: number
+            completed_at:
+              type:
+              - string
+              - 'null'
+            user:
+              type: object
+              properties:
+                email:
+                  type: string
+                id:
+                  type: string
+                name:
+                  type: string
+                image_url:
+                  type:
+                  - string
+                  - 'null'
+                signed_in_at:
+                  type:
+                  - string
+                  - 'null'
+                avobot_id:
+                  type:
+                  - string
+                  - 'null'
+                phone:
+                  type:
+                  - string
+                  - 'null'
+                phone_formatted:
+                  type:
+                  - string
+                  - 'null'
+                created_at:
+                  type: number
+                require_2fa:
+                  type: boolean
+                mfa_app_valid:
+                  type: boolean
+                phone_valid:
+                  type: boolean
+            assign_to_user_id:
+              type:
+              - string
+              - 'null'
+            boost_multiplier:
+              type: integer
+            sms_errors:
+              type: object
+            mms_errors:
+              type: object
+            audience:
+              type: integer
+            contacts_count:
+              type: integer
+            attempted:
+              type: integer
+            delivered:
+              type: integer
+            undelivered:
+              type: integer
+            responded:
+              type: integer
+            replied_stop:
+              type: integer
+            pending_contacts_count:
+              type: integer
