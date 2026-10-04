@@ -115,6 +115,8 @@ apis:
   humanURL: https://www.avochato.com/docs
   baseURL: https://ww
   tags:
+  - Broadcast
+  tags_raw:
   - Broadcasts
   properties:
   - type: OpenAPI
@@ -203,6 +205,8 @@ apis:
   humanURL: https://www.avochato.com/docs
   baseURL: https://ww
   tags:
+  - Message
+  tags_raw:
   - Messages
   properties:
   - type: OpenAPI
@@ -225,6 +229,8 @@ apis:
   humanURL: https://www.avochato.com/docs
   baseURL: https://ww
   tags:
+  - Ticketing
+  tags_raw:
   - Tickets
   properties:
   - type: OpenAPI
