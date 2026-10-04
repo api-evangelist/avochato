@@ -23,7 +23,15 @@
     "avochato-openapi-generated.yml: tagged paths POST /v1/{v1id} -> Avochato API",
     "avochato-openapi-generated.yml: tagged paths GET /v1/{v1id}/{ids} -> Avochato API",
     "avochato-openapi-generated.yml: declared missing tag: Avochato API",
-    "apis.yml register: written (+7 apis, 7 total)"
+    "apis.yml register: already-registered"
   ],
-  "skipped": []
+  "skipped": [
+    "avochato-avochato-api-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "avochato-broadcasts-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "avochato-campaigns-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "avochato-contacts-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "avochato-links-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "avochato-messages-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "avochato-tickets-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }

@@ -105,11 +105,6 @@ paths:
         snippet: curl "https://www.avochato.com/v1/broadcasts/xDjJBRJoOe" -d '{"auth_id":"enL8aAl87N","auth_secret":"YYYYYYYYYYYYYYYYYYYY","message":"new test message","media_url":"https://somesite.com/pretty2.jpg","name":"My Other Broadcast","via_tags":"tag2,tag3","via_contact_ids":"EZA9Pl59rw","via_phone_numbers":"+15105551234,+14155551234","via_field[field]":"email","via_field[value]":"bob@mctest.com"}' -X POST
 components:
   schemas:
-    GetV1BroadcastsIdAudienceCountResponse:
-      type: object
-      properties:
-        data:
-          type: object
     PostV1BroadcastsBlp9Me9QyxPublishRequest:
       type: object
       properties:
@@ -220,6 +215,11 @@ components:
               type: integer
             replied_stop:
               type: integer
+    GetV1BroadcastsIdAudienceCountResponse:
+      type: object
+      properties:
+        data:
+          type: object
     PostV1BroadcastsXdjjbrjooeRequest:
       type: object
       properties:

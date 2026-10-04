@@ -132,42 +132,6 @@ paths:
         snippet: "curl \"https://www.avochato.com/v1/contacts/remove_all\" -d '{\"auth_id\":\"BLP9Me9qYX\",\"auth_secret\":\"YYYYYYYYYYYYYYYYYYYY\",\"query\":null}' -X DELETE  -H \"Version: HTTP/1.0\"  -H \"Content-Type: application/json\"  -H \"Host: www.avochato.com\" \n Response \n Simulated Response \n Status \n 200 \n Headers \n Content-Type: application/json; charset=utf-8\nX-Request-Id: acb356fd-64b7-4d8b-8568-5570a4d908da\nX-Runtime"
 components:
   schemas:
-    PostV1ContactsRkajvdlb0OEventsRequest:
-      type: object
-      properties:
-        auth_id:
-          type: string
-        auth_secret:
-          type: string
-        type:
-          type: string
-        context:
-          type: string
-        revenue:
-          type: number
-    DeleteV1ContactsRemoveAllRequest:
-      type: object
-      properties:
-        auth_id:
-          type: string
-        auth_secret:
-          type: string
-        query:
-          type:
-          - string
-          - 'null'
-    GetV1Contacts2Jrbk681PvResponse:
-      type: object
-      properties:
-        status:
-          type: integer
-          description: HTTP status code
-        data.contacts:
-          type: array
-          description: Array of contact objects
-        page:
-          type: integer
-          description: Current page number
     GetV1Contacts2Jrbk681Pv2Cenl8Alj7NwResponse:
       type: object
       properties:
@@ -263,3 +227,39 @@ components:
                 - 'null'
               due_for_compliance:
                 type: boolean
+    DeleteV1ContactsRemoveAllRequest:
+      type: object
+      properties:
+        auth_id:
+          type: string
+        auth_secret:
+          type: string
+        query:
+          type:
+          - string
+          - 'null'
+    PostV1ContactsRkajvdlb0OEventsRequest:
+      type: object
+      properties:
+        auth_id:
+          type: string
+        auth_secret:
+          type: string
+        type:
+          type: string
+        context:
+          type: string
+        revenue:
+          type: number
+    GetV1Contacts2Jrbk681PvResponse:
+      type: object
+      properties:
+        status:
+          type: integer
+          description: HTTP status code
+        data.contacts:
+          type: array
+          description: Array of contact objects
+        page:
+          type: integer
+          description: Current page number

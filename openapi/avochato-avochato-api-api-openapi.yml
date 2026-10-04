@@ -236,31 +236,6 @@ components:
                 - 'null'
               boost_multiplier:
                 type: integer
-    PostV1V1IdRequest:
-      type: object
-      properties:
-        auth_id:
-          type: string
-        auth_secret:
-          type: string
-        message:
-          type: string
-        media_url:
-          type: string
-        status_callback:
-          type: string
-        name:
-          type: string
-        via_tags:
-          type: string
-        via_contact_ids:
-          type: string
-        via_phone_numbers:
-          type: string
-        via_field[field]:
-          type: string
-        via_field[value]:
-          type: string
     PostV1V1IdResponse:
       type: object
       properties:
@@ -365,3 +340,28 @@ components:
           type: object
         page:
           type: integer
+    PostV1V1IdRequest:
+      type: object
+      properties:
+        auth_id:
+          type: string
+        auth_secret:
+          type: string
+        message:
+          type: string
+        media_url:
+          type: string
+        status_callback:
+          type: string
+        name:
+          type: string
+        via_tags:
+          type: string
+        via_contact_ids:
+          type: string
+        via_phone_numbers:
+          type: string
+        via_field[field]:
+          type: string
+        via_field[value]:
+          type: string
