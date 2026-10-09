@@ -15,3 +15,15 @@ plans:
   description: Custom Unlock customized solutions for your organization’s complex needs.
 docs: https://www.avochato.com/pricing
 note: 2 extracted row(s) were dropped because their quote was not on the page.
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models: []
+  units: []
+  plans:
+  - name: Premium
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
