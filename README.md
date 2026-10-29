@@ -64,5 +64,141 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Avochato is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/avochato_stock/
+Avochato provides the easiest business text messaging software, offering SMS, RCS, voice calls, and live chat solutions. Their platform includes automation features, AI agents, shared inbox, broadcasting, analytics, and integrations, targeting sales, support, marketing, and operations teams.
+
+**Areas:** Messaging · SMS · RCS · Voice · Business
+
+## Avochato on APIs.io
+
+Everything profiled for Avochato is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/avochato/](https://apis.io/providers/avochato/)** — or go straight to one of the APIs or properties below.
+
+### APIs (7)
+
+- [Avochato Avochato API](https://apis.io/apis/avochato/avochato-avochato-api-api/) — The Avochato API API from Avochato — 3 operation(s) for avochato api.
+- [Avochato Broadcasts API](https://apis.io/apis/avochato/avochato-broadcasts-api/) — The Broadcasts API from Avochato — 3 operation(s) for broadcasts.
+- [Avochato Campaigns API](https://apis.io/apis/avochato/avochato-campaigns-api/) — The Campaigns API from Avochato — 2 operation(s) for campaigns.
+- [Avochato Contacts API](https://apis.io/apis/avochato/avochato-contacts-api/) — The Contacts API from Avochato — 4 operation(s) for contacts.
+- [Avochato Links API](https://apis.io/apis/avochato/avochato-links-api/) — The Links API from Avochato — 1 operation(s) for links.
+- [Avochato Messages API](https://apis.io/apis/avochato/avochato-messages-api/) — The Messages API from Avochato — 2 operation(s) for messages.
+- [Avochato Tickets API](https://apis.io/apis/avochato/avochato-tickets-api/) — The Tickets API from Avochato — 2 operation(s) for tickets.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Avochato Webhooks](https://apis.io/asyncapis/avochato/avochato-webhooks/)
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [avochato-mcp.yml](https://apis.io/servers/avochato/avochato-mcp-yml/)
+
+#### JSON Schema (6)
+
+The data models the API reads and writes.
+
+- [DeleteV1Messages43Y83XbvnmResponse](https://apis.io/schemas/avochato/avochato-delete-v1-messages43-y83-xbvnm-response/)
+- [GetV1Contacts2Jrbk681Pv2Cenl8Alj7NwResponse](https://apis.io/schemas/avochato/avochato-get-v1-contacts2-jrbk681-pv2-cenl8-alj7-nw-response/)
+- [GetV1V1IdResponse](https://apis.io/schemas/avochato/avochato-get-v1-v1-id-response/)
+- [PostV1BroadcastsBlp9Me9QyxPublishResponse](https://apis.io/schemas/avochato/avochato-post-v1-broadcasts-blp9-me9-qyx-publish-response/)
+- [PostV1BroadcastsXdjjbrjooeResponse](https://apis.io/schemas/avochato/avochato-post-v1-broadcasts-xdjjbrjooe-response/)
+- [PostV1V1IdResponse](https://apis.io/schemas/avochato/avochato-post-v1-v1-id-response/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Avochato Context](https://apis.io/jsonld/avochato/avochato-context/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Avochato API Rules](https://apis.io/rules/avochato/avochato-rules/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Avochato Domain Security](https://apis.io/security/avochato/avochato-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Avochato Plans Pricing](https://apis.io/plans/avochato/avochato-plans-pricing/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.avochato.com/)
+- [Documentation](https://www.avochato.com/docs)
+- [Getting started](https://help.avochato.com/using-avochato/1c4ChajMJ1RX2ELRWZWrih/how-to-setup-avoai/uA2BDgaLjHZGdMsPpgbQG1)
+- [API reference](https://www.avochato.com/apis)
+- [Pricing](https://www.avochato.com/pricing)
+- [Support](https://help.avochato.com)
+- [Blog](https://www.avochato.com/blog)
+- [Terms of service](https://www.avochato.com/terms)
+- [Privacy policy](https://www.avochato.com/privacy)
+- [Status](https://status.avochato.com/)
+
+## API Evangelist rating
+
+**Kin Score 43.0** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 75.0 |
+| Contract quality | 31.6 |
+| Contract governance | 35.6 |
+| Operational transparency | 34.2 |
+| Developer ergonomics | 35.7 |
+| Access clarity | 65.8 |
+
+**Agent readiness 23.2** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | documented (partial credit) |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | partial |
+| Rate Limit Signal | — |
+| Event Surface Described | yes |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | distinct |
+
+**Regulatory alignment 15.8** — Telecommunications
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/avochato/](https://apis.io/providers/avochato/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Avochato: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/avochato/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
